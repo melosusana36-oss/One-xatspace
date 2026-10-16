@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>ONE — XatSpace</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#03040a;color:#eef2ff;font-family:Arial,Helvetica,sans-serif}
+body{padding:18px}
+.space{position:relative;overflow:hidden;border-radius:18px;background:radial-gradient(circle at 50% 15%,#201244 0,#090b18 42%,#03040a 100%);border:1px solid #30364e;min-height:620px;padding:34px 18px}
+.stars{position:absolute;inset:-50px;pointer-events:none;background-image:radial-gradient(circle,#fff 1px,transparent 1.5px),radial-gradient(circle,#b8c7ff 1px,transparent 1.5px);background-size:43px 43px,71px 71px;background-position:0 0,17px 23px;opacity:.32;}
+.orb{position:absolute;border-radius:999px;opacity:.24;pointer-events:none}
+.o1{width:180px;height:180px;background:#8b5cf6;left:-55px;top:80px;}
+.o2{width:190px;height:190px;background:#06b6d4;right:-70px;top:280px;}
+.inner{position:relative;z-index:2;max-width:640px;margin:auto;text-align:center}
+.welcome{font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#67e8f9;text-shadow:0 0 9px #22d3ee,0 0 20px #0891b2;margin-bottom:20px}
+.name{font-weight:900;font-size:82px;line-height:.9;letter-spacing:.12em;margin:0 0 14px;color:#fff;text-shadow:0 0 7px #fff,0 0 18px #c084fc,0 0 38px #8b5cf6,0 0 65px #7c3aed;}
+.tag{font-size:13px;letter-spacing:.3em;color:#c4b5fd;margin-bottom:32px}
+.card{background:rgba(10,12,28,.7);border:1px solid rgba(165,180,252,.28);border-radius:16px;padding:23px 20px;box-shadow:inset 0 0 28px rgba(124,58,237,.08)}
+.card p{line-height:1.75;margin:8px 0;color:#dbe4ff}
+.cyan{color:#67e8f9;text-shadow:0 0 8px #06b6d4}.purple{color:#d8b4fe;text-shadow:0 0 8px #a855f7}.green{color:#86efac;text-shadow:0 0 8px #22c55e}.pink{color:#fda4af;text-shadow:0 0 8px #fb7185}
+.values{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin:24px 0}
+.pill{padding:8px 13px;border:1px solid #424968;border-radius:999px;background:rgba(12,15,34,.72);font-size:12px;letter-spacing:.08em}
+.quote{margin-top:25px;font-size:16px;font-style:italic;color:#e9d5ff;text-shadow:0 0 12px rgba(192,132,252,.65)}
+.enter{margin-top:27px;display:inline-block;border:1px solid #67e8f9;border-radius:10px;padding:10px 18px;color:#cffafe;box-shadow:0 0 12px rgba(34,211,238,.28),inset 0 0 12px rgba(34,211,238,.08);}
+.footer{margin-top:22px;font-size:10px;letter-spacing:.3em;color:#707895;text-transform:uppercase}
+@keyframes pulse{0%,100%{filter:brightness(.9);transform:scale(1)}50%{filter:brightness(1.25);transform:scale(1.025)}}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(43px)}}
+@keyframes float{0%,100%{transform:translateY(-8px)}50%{transform:translateY(24px)}}
+@keyframes buttonGlow{0%,100%{box-shadow:0 0 8px rgba(34,211,238,.25)}50%{box-shadow:0 0 24px rgba(34,211,238,.65)}}
+@media(max-width:480px){body{padding:8px}.space{padding:28px 12px}.welcome{letter-spacing:.18em}.name{font-size:58px}.tag{letter-spacing:.18em}.card{padding:20px 14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<section class="space" aria-label="XatSpace do One">
+<div class="stars"></div><div class="orb o1"></div><div class="orb o2"></div>
+<div class="inner">
+<div class="welcome">✦ Bem-vindo ao XatSpace do ✦</div>
+<div class="name">ONE</div>
+<div class="tag">WELCOME TO MY WORLD</div>
+<div class="card">
+<p>Não estou aqui para agradar a toda a gente.</p>
+<p>Sou simplesmente <span class="purple"><b>eu</b></span>, com a minha maneira de ser,<br>os meus pensamentos e a minha história.</p>
+<div class="values">
+<span class="pill cyan">💙 RESPEITO</span>
+<span class="pill purple">💜 AMIZADE</span>
+<span class="pill green">💚 LEALDADE</span>
+<span class="pill pink">❤️ VERDADE</span>
+</div>
+<p>Gosto de pessoas <span class="cyan"><b>verdadeiras</b></span>.<br>Valorizo a <span class="purple"><b>amizade</b></span>.<br>Respeito quem me <span class="green"><b>respeita</b></span>.</p>
+<p>A vida ensinou-me que nem toda a gente que chega fica…<br>e nem toda a gente que se afasta faz falta.</p>
+<p class="quote">“Sem máscaras • sem falsidade • sem dramas”</p>
+<div class="enter">⚡ SE VIESTE POR BEM, ÉS BEM-VINDO ⚡</div>
+</div>
+<div class="footer">ONE • XATSPACE</div>
+</div>
+</section>
+</body>
+</html>
